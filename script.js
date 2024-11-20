@@ -15,7 +15,7 @@ const ageValidationPromise = new Promise((resolve, reject) => {
       } else {
         reject(name);
       }
-    }, 4000); // 4 seconds delay
+    }, 4000);
   });
 
 ageValidationPromise
@@ -23,6 +23,6 @@ ageValidationPromise
       alert(`Welcome, ${name}. You can vote.`);
     })
     .catch((name) => {
-      alert(`Oh sorry,  ${name}. You aren't old enough.`);
+      alert(`Oh sorry ${name}. You aren't old enough.`);
     });
 });
